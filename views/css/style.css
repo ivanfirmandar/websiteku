@@ -1,0 +1,201 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Istok Web',
+        sans-serif;
+}
+
+.tool {
+    position: fixed;
+    background-color: gray;
+    opacity: 20%;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    transition: ease;
+    border-radius: 100%;
+    text-align: center;
+    right: 10px;
+}
+
+.login {
+    text-align: center;
+    height: 230px;
+    transition: ease 1s;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.hide-height {
+    height: 0px;
+    overflow: hidden;
+    transition: ease 1s;
+}
+
+
+.login h3 {
+    color: white;
+    font-size: 18px;
+    margin: 0px 0px 12px 0px;
+    padding-top: 25px;
+}
+
+.login form input {
+    margin: 5px 0px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.login form button {
+    margin: 5px 0px;
+    border: none;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+.tool:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.nav-bar {
+    background-color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav-bar a {
+    color: white;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+.nav-bar a:hover {
+    border-bottom: solid;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    height: 250px;
+    line-height: 250px;
+}
+
+.header-title {
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+    height: 250px;
+    line-height: 250px;
+}
+
+.header-title h5 {
+    line-height: 20px;
+    margin: 2px 0px;
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+
+.header-title h1 {
+    line-height: 20px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.description {
+    padding: 20px 20px 0px 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.description h3 {
+    text-align: center;
+}
+
+.portofolio {
+    padding: 20px 20px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.portofolio h3 {
+    text-align: center;
+}
+
+.portofolio-content-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+}
+
+.portofolio-content {
+    height: 100%;
+    width: 150px;
+    margin: 5px 5px 0px 5px;
+    background-color: gray;
+}
+
+.social-media {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.social-media h3 {
+    text-align: center;
+}
+
+.social-media-container {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+}
+
+.social-media-content {
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px 0px;
+    border-radius: 100%;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    width: 200px;
+    height: 100px;
+}
+
+.footer p {
+    font-size: 10px;
+    height: 50px;
+}
+
+.fa-user {
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
