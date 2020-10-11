@@ -3,38 +3,78 @@ body {
     margin: 0px;
     font-family: 'Istok Web',
         sans-serif;
+    height: 100%;
 }
 
-.tool {
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/* TOOL LOGIN ADMIN */
+.admin-tool {
     position: fixed;
-    background-color: gray;
-    opacity: 20%;
-    height: 50px;
-    width: 50px;
+    display: flex;
+    flex-direction: row;
     top: 10px;
-    transition: ease;
-    border-radius: 100%;
-    text-align: center;
+    background-color: whitesmoke;
+    padding: 5px;
+    padding-left: 20px;
+    /* border-radius: 5px; */
     right: 10px;
 }
 
+.admin-tool h3 {
+    margin: 0px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.tool {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    transition: ease;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 12px;
+}
+
+.tool:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.fa-user {
+    color: white;
+    font-size: 10px;
+    line-height: 30px;
+}
+
+/* TOOL LOGIN ADMIN */
 .login {
+    position: absolute;
+    top: 10px;
+    right: 115px;
     text-align: center;
     height: 230px;
+    width: 200px;
     transition: ease 1s;
     overflow: hidden;
-    background-color: #111111;
+    background-color: white;
+    border-radius: 2px 0px 2px 2px;
 }
 
 .hide-height {
-    height: 0px;
+    height: 40px;
+    width: 0px;
     overflow: hidden;
     transition: ease 1s;
 }
 
 
 .login h3 {
-    color: white;
+    color: black;
     font-size: 18px;
     margin: 0px 0px 12px 0px;
     padding-top: 25px;
@@ -53,19 +93,15 @@ body {
     margin: 5px 0px;
     border: none;
     font-size: 12px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     height: 30px;
     width: 80px;
     border-radius: 20px;
 }
 
-.tool:hover {
-    opacity: 100%;
-    cursor: pointer;
-}
-
 .nav-bar {
+    position: absolute;
     background-color: black;
     height: 40px;
     line-height: 40px;
@@ -87,14 +123,14 @@ body {
 .header {
     display: flex;
     background-color: black;
-    height: 250px;
+    height: 100%;
     line-height: 250px;
 }
 
 .header-title {
     color: white;
     text-align: center;
-    margin: 0px auto;
+    margin: 200px auto 0px auto;
     height: 250px;
     line-height: 250px;
 }
@@ -118,6 +154,7 @@ body {
     text-align: justify;
 }
 
+
 .description h3 {
     text-align: center;
 }
@@ -126,6 +163,7 @@ body {
     padding: 20px 20px;
     font-size: 12px;
     text-align: justify;
+    display: inline-block;
 }
 
 .portofolio h3 {
@@ -134,18 +172,31 @@ body {
 
 .portofolio-content-container {
     display: flex;
-    overflow: hidden;
-    justify-content: space-around;
+    /* overflow: hidden; */
+    justify-content: center;
+    height: 100%;
     flex-wrap: wrap;
-    height: 200px;
+    height: 250px;
     width: 100%;
 }
 
 .portofolio-content {
-    height: 100%;
+    /* border-radius: 20px; */
+    /* overflow: hidden; */
+    height: 200px;
     width: 150px;
-    margin: 5px 5px 0px 5px;
+    text-align: center;
+    /* margin: 5px 5px 0px 5px; */
     background-color: gray;
+    transition: ease 0.5s;
+}
+
+.grow {
+    position: relative;
+    bottom: 20px;
+    height: 100%;
+    width: 200px;
+    box-shadow: 0px 0px 5px;
 }
 
 .social-media {
@@ -192,10 +243,4 @@ body {
 .footer p {
     font-size: 10px;
     height: 50px;
-}
-
-.fa-user {
-    color: white;
-    font-size: 20px;
-    line-height: 50px;
 }
