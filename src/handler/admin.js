@@ -10,13 +10,31 @@ module.exports = {
         }
         req.session.userid = req.body.userid;
         req.session.password = req.body.password;
-        res.redirect('/admin');
+        res.json({
+            'status' : 'Success',
+            'message' : 'Berhasil Login',
+            'data' : {
+                'userid' : req.body.userid,
+                'password' : req.body.password,
+            }
+        })
     },
     checkAuth : (req,res,next)=>{
         if(req.session.userid){
             next();
         }else{
-            res.send("No Authentication");
+            res.sendFile(config.absoluteDir + '/views/404.html');
+        }
+    },
+    deleteAuth : (req,res,next) =>{
+        try {
+            req.session.destroy()
+            res.redirect('/')
+        } catch (error) {
+            res.json({
+                'status' : 'Failed',
+                'message' : 'Session Gagal Dihapus',
+            })
         }
     }
 }
